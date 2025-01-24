@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_Mono } from "next/font/google";
 import "./globals.css";
 
-const notoSansMono = Noto_Sans_Mono({ weight: "400" });
+const notoSansMono = Noto_Sans_Mono({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Jorge Eberhard",
