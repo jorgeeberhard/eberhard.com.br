@@ -6,7 +6,7 @@ import Contact from "@/app/ui/contact";
 
 export default function Home() {
   return (
-    <div className="mx-[20px]">
+    <div>
       <Header />
       <About />
       <Stack />

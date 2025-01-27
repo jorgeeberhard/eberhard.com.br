@@ -51,7 +51,7 @@ export async function ProjectWrapper() {
   return (
     <div className="flex flex-col py-5 px-10 bg-[#F2DEBA]" id="projects">
       <h1 className="text-3xl mb-5">Projects</h1>
-      <div className="grid grid-cols-2 gap-10">
+      <div className="flex flex-col gap-10 lg:grid lg:grid-cols-2">
         {projectsData.map((project, index) => (
           <ProjectCard key={index} projectInformation={project} />
         ))}

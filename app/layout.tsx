@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSansMono.className} antialiased flex flex-col justify-center`}
+        className={`${notoSansMono.className} antialiased flex sm:flex-col justify-center`}
       >
         <div className="flex justify-center">
           <NavBar />

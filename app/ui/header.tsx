@@ -4,7 +4,7 @@ import profilePic from "@/public/profile-picture.jpg";
 export default function Header() {
   return (
     <div
-      className="grid grid-cols-2 place-items-center gap-4 py-5 bg-[#FFEFD6]"
+      className="flex flex-col place-items-center gap-4 py-5 bg-[#FFEFD6] sm:grid sm:grid-cols-2"
       id="home"
     >
       <div className="text-3xl">
