@@ -14,12 +14,16 @@ export async function ProjectCard({
       <p>{projectInformation.description}</p>
       <div className="flex justify-between">
         <div className="flex">
-          {projectInformation.code_language.map((code, index) => (
-            <p
-              className="text-xs bg-[#0E5E6F] text-white mr-2 p-1 shadow rounded-md"
-              key={index}
-            >{`${code[0]}: ${code[1]}%`}</p>
-          ))}
+          {projectInformation.code_language != null ? (
+            projectInformation.code_language.map((code, index) => (
+              <p
+                className="text-xs bg-[#0E5E6F] text-white mr-2 p-1 shadow rounded-md"
+                key={index}
+              >{`${code[0]}: ${code[1]}%`}</p>
+            ))
+          ) : (
+            <p>No Language Information</p>
+          )}
         </div>
         <div className="flex">
           <Link
