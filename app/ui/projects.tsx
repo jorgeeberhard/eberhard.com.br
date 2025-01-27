@@ -12,7 +12,7 @@ export async function ProjectCard({
     <div className="flex flex-col py-5 px-10 bg-[#FFEFD6] rounded-md shadow-xl">
       <h3 className="text-xl font-bold">{projectInformation.name}</h3>
       <p>{projectInformation.description}</p>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row justify-between">
         <div className="flex">
           {projectInformation.code_language != null ? (
             projectInformation.code_language.map((code, index) => (
@@ -25,16 +25,16 @@ export async function ProjectCard({
             <p>No Language Information</p>
           )}
         </div>
-        <div className="flex">
+        <div className="flex justify-center">
           <Link
-            className="mr-4 flex items-center"
+            className="sm:mr-4 sm:mx-0 sm:mt-0 mx-2 mt-2 flex items-center"
             href={projectInformation.code_source}
           >
             <FaCode />
           </Link>
           {projectInformation.deploy != null ? (
             <Link
-              className="mr-4 flex items-center"
+              className="sm:mr-4 sm:mx-0 sm:mt-0 mx-2 mt-2 flex items-center"
               href={projectInformation.deploy}
             >
               <FaLink />
