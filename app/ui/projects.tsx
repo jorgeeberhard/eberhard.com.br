@@ -9,7 +9,7 @@ export async function ProjectCard({
   projectInformation: Project;
 }) {
   return (
-    <div className="flex flex-col py-5 px-10 bg-[#FFEFD6]  rounded-md shadow-xl">
+    <div className="flex flex-col py-5 px-10 bg-[#FFEFD6] rounded-md shadow-xl">
       <h3 className="text-xl font-bold">{projectInformation.name}</h3>
       <p>{projectInformation.description}</p>
       <div className="flex justify-between">
@@ -49,7 +49,7 @@ export async function ProjectCard({
 export async function ProjectWrapper() {
   const projectsData = await fetchGithubRepo();
   return (
-    <div className="flex flex-col py-5 px-10 bg-[#F2DEBA]">
+    <div className="flex flex-col py-5 px-10 bg-[#F2DEBA]" id="projects">
       <h1 className="text-3xl mb-5">Projects</h1>
       <div className="grid grid-cols-2 gap-10">
         {projectsData.map((project, index) => (

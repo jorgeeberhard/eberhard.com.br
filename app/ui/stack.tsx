@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Stack() {
   return (
-    <div className="flex flex-col py-5 px-10">
+    <div className="flex flex-col py-5 px-10 bg-[#FFEFD6]">
       <h1 className="text-3xl">Stack</h1>
       <div className="grid grid-cols-6 pt-2">
         <Image
