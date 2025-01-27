@@ -1,0 +1,5 @@
+
+#F2DEBA - Main
+#FFEFD6 - Secondary
+#0E5E6F - Details
+#3A8891 - Links/Buttons

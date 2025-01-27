@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_Mono } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/app/ui/navbar";
 
 const notoSansMono = Noto_Sans_Mono({ weight: "400", subsets: ["latin"] });
 
@@ -16,7 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSansMono.className} antialiased flex flex-cols`}>
+      <body
+        className={`${notoSansMono.className} antialiased flex flex-col justify-center`}
+      >
+        <div className="flex justify-center">
+          <NavBar />
+        </div>
         {children}
       </body>
     </html>
