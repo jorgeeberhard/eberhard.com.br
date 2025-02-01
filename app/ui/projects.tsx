@@ -10,11 +10,11 @@ export async function ProjectCard({
   projectInformation: Project;
 }) {
   return (
-    <div className="flex flex-col py-5 px-10 bg-[#FFEFD6] rounded-md shadow-xl">
+    <div className="flex flex-col py-5 px-5 sm:px-10 bg-[#FFEFD6] rounded-md shadow-xl">
       <h3 className="text-xl font-bold">{projectInformation.name}</h3>
       <p>{projectInformation.description}</p>
       <div className="flex flex-col sm:flex-row justify-between">
-        <div className="flex">
+        <div className="flex space-around">
           {projectInformation.code_language != null ? (
             projectInformation.code_language.map((code, index) => (
               <p

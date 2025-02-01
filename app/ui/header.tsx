@@ -9,7 +9,7 @@ export default function Header() {
       className="flex flex-col place-items-center gap-4 py-5 bg-[#FFEFD6] sm:grid sm:grid-cols-2"
       id="home"
     >
-      <div className="text-3xl">
+      <div className="flex flex-col items-center text-xl sm:text-3xl p-5">
         <h1>{translations("title")}</h1>
         <p>
           {translations("subtitle") + " "}
@@ -19,8 +19,8 @@ export default function Header() {
       <Image
         className="rounded-full"
         src={profilePic}
-        width={300}
-        height={300}
+        width={250}
+        height={250}
         alt="Profile Picture"
       />
     </div>
