@@ -1,4 +1,4 @@
-import { repos, owner, Project } from "./definitions";
+import { repos, owner, Project } from "@/app/lib/definitions";
 import dotenv from "dotenv";
 dotenv.config();
 

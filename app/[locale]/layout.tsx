@@ -6,7 +6,7 @@ import NavBar from "@/app/ui/navbar";
 import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
-import { Locales } from "../lib/definitions";
+import { Locales } from "@/app/lib/definitions";
 
 const notoSansMono = Noto_Sans_Mono({ weight: "400", subsets: ["latin"] });
 
