@@ -1,16 +1,19 @@
 import Image from "next/image";
 import profilePic from "@/public/profile-picture.jpg";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
+  const translations = useTranslations("header");
   return (
     <div
       className="flex flex-col place-items-center gap-4 py-5 bg-[#FFEFD6] sm:grid sm:grid-cols-2"
       id="home"
     >
       <div className="text-3xl">
-        <h1>Hello World,</h1>
+        <h1>{translations("title")}</h1>
         <p>
-          I am <span className="underline">Jorge Eberhard</span>
+          {translations("subtitle") + " "}
+          <span className="underline">{translations("underline")}</span>
         </p>
       </div>
       <Image

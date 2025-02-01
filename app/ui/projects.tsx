@@ -1,7 +1,8 @@
 import { Project } from "@/app/lib/definitions";
 import { FaCode, FaLink } from "react-icons/fa6";
 import Link from "next/link";
-import { fetchGithubRepo } from "../lib/utils";
+import { fetchGithubRepo } from "@/app/lib/utils";
+import { getTranslations } from "next-intl/server";
 
 export async function ProjectCard({
   projectInformation,
@@ -48,9 +49,11 @@ export async function ProjectCard({
 
 export async function ProjectWrapper() {
   const projectsData = await fetchGithubRepo();
+  const translations = await getTranslations("project_wrapper");
+
   return (
     <div className="flex flex-col py-5 px-10 bg-[#F2DEBA]" id="projects">
-      <h1 className="text-3xl mb-5">Projects</h1>
+      <h1 className="text-3xl mb-5">{translations("title")}</h1>
       <div className="flex flex-col gap-10 lg:grid lg:grid-cols-2">
         {projectsData.map((project, index) => (
           <ProjectCard key={index} projectInformation={project} />

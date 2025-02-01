@@ -1,0 +1,26 @@
+{
+  "nav_bar": {
+    "title": "Jorge Eberhard",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact-me"
+  },
+  "header": {
+    "title": "Hello World,",
+    "subtitle": "I am",
+    "underline": "Jorge Eberhard"
+  },
+  "about": {
+    "title": "About",
+    "description": "I am a Computer Science student at Feevale University. I also work on small projects using NextJS and TypeScript. Here you will find my personal projects as well as the projects developed for the University. Other projects are available on my"
+  },
+  "stack": {
+    "title": "Stack"
+  },
+  "project_wrapper": {
+    "title": "Projects"
+  },
+  "contact": {
+    "title": "Contact-me"
+  }
+}

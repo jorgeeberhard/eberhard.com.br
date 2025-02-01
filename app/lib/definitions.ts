@@ -13,3 +13,5 @@ export const repos = [
   "to-do-list",
   "h2o-erlang",
 ];
+
+export type Locales = "en" | "pt-BR";

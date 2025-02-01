@@ -1,7 +1,11 @@
+import { useTranslations } from "next-intl";
+
 export default function Contact() {
+  const translations = useTranslations("contact");
+
   return (
     <div className="flex flex-col py-5 px-10 bg-[#FFEFD6]" id="contact-me">
-      <h1 className="text-3xl mb-5">Contact-me</h1>
+      <h1 className="text-3xl mb-5">{translations("title")}</h1>
       <p>
         Whatsapp:{" "}
         <a className="hover:text-[#0E5E6F]" href="https://wa.me/5554996120527">
