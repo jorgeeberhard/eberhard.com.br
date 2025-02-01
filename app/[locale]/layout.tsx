@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { Locales } from "@/app/lib/definitions";
+import LocaleSwitchSelector from "../ui/LocaleSwitchSelector";
 
 const notoSansMono = Noto_Sans_Mono({ weight: "400", subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider messages={message}>
           <div className="flex justify-center">
+            <LocaleSwitchSelector />
             <NavBar />
           </div>
           {children}

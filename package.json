@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "country-flag-icons": "^1.5.14",
     "dotenv": "^16.4.7",
     "next": "15.1.6",
     "next-intl": "^3.26.3",
