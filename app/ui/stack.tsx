@@ -1,3 +1,5 @@
+"use client";
+
 import { stack } from "@/app/lib/definitions";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,7 +9,7 @@ export default function Stack() {
     <div className="flex flex-col py-5 px-10 bg-[#FFEFD6]">
       <h1 className="text-3xl">Stack</h1>
       <div
-        className={`grid grid-cols-1 sm:grid-cols-${stack.length} gap-5 sm:gap-2 justify-items-center content-center pt-2`}
+        className={`grid grid-cols-2 sm:grid-cols-4 gap-5 sm:gap-2 justify-items-center content-center pt-2`}
       >
         {stack.map((domain, index) => (
           <div
