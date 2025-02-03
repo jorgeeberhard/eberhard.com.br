@@ -50,6 +50,11 @@ export const stack: Stack[] = [
     name: "Back-end",
     tech: [
       {
+        name: "nextjs",
+        description: "NextJS",
+        link: "https://nextjs.org/",
+      },
+      {
         name: "nodejs",
         description: "Node JS",
         link: "https://nodejs.org/",
@@ -59,15 +64,20 @@ export const stack: Stack[] = [
         description: "TypeScript",
         link: "https://www.typescriptlang.org/",
       },
-      {
-        name: "nextjs",
-        description: "NextJS",
-        link: "https://nextjs.org/",
-      },
+    ],
+  },
+  {
+    name: "Database",
+    tech: [
       {
         name: "postgresql",
         description: "PostgreSQL",
         link: "https://www.postgresql.org/",
+      },
+      {
+        name: "sqlite",
+        description: "SQLite",
+        link: "https://www.sqlite.org/",
       },
     ],
   },
