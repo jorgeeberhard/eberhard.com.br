@@ -12,6 +12,7 @@ export const repos = [
   "clone-tabnews",
   "to-do-list",
   "h2o-erlang",
+  "digital-image-processing",
 ];
 
 type Technology = {
